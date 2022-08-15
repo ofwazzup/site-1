@@ -1,0 +1,82 @@
+header {
+    height: 80px;
+}
+.header-first {
+    height: 28px;
+    background-color: black;
+}
+.header-second {
+    height: calc(80px - 28px);
+    width: 1200px;
+}
+.nav-link {
+    color: black;
+    font-size: 17px;
+}
+ul.nav a li {
+    padding: 0;
+    height: calc(80px - 28px);
+    width: 110px;
+}
+ul.mn a:hover {
+    background-color: rgba(128, 128, 128, 0.308);
+    text-decoration: line-through;
+    color: black;
+    transition: 0.2s;
+}
+ul.mn a:last-child:hover {
+    background-color: rgba(128, 128, 128, 0.308);
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+    transition: 0.2s;
+}
+ul.nav a {
+    padding: 0;
+}
+.logo img {
+    width: 65px;
+    height: 45px;
+    margin: 5px 10px 0px 0px;
+}
+.play {
+    width: 1200px;
+}
+.icons img {
+    width: 23px;
+    height: 22px;
+}
+.icons img:hover {
+    background-color: rgba(128, 128, 128, 0.308);
+    border-radius: 20%;
+    width: 23px;
+    height: 22px;
+}
+.mw-container img:hover {
+    opacity: 0.8;
+    transition: 0.8s;
+}
+.look {
+    position: relative;
+	cursor: pointer;
+	line-height: 1;
+	text-decoration: none;
+    color: gray;
+}
+.look::after {
+    display: block;
+	position: absolute;
+	left: 0;
+	width: 0;
+	height: 1px;
+	background-color: black;
+	content: "";
+	transition: 0.4s ease-out;
+}
+.look:hover {
+    color: black;
+}
+.look:hover:after,
+.look:focus:after {
+	width: 12%;
+}
+
